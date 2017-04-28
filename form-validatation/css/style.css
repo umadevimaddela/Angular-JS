@@ -1,0 +1,14 @@
+input::placeholder {
+    color: lightgray;
+    font-size: 12px;
+}
+
+label {
+    float: right;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-left: 35px;
+}

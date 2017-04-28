@@ -1,0 +1,74 @@
+<form name="fm">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-3">
+                <label for="">Name:</label>
+            </div>
+            <div class="col-lg-4">
+                <input type="text" name="name" placeholder="Enter your fullname" required ng-value="name" ng-model="name">
+                <div ng-if="fm.name.$invalid" class="error">Please enter name</div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <label for="">Email:</label>
+            </div>
+            <div class="col-lg-4">
+                <input type="te" name="email" placeholder="Enter your email" required ng-value="email" ng-model="email">
+                <div ng-if="fm.email.$invalid" class="error">Please enter email</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <label for="">UserName:</label>
+            </div>
+            <div class="col-lg-4">
+                <input type="text" name="username" placeholder="Enter your UserName" required ng-value="username" ng-model="username">
+                <div ng-if="fm.username.$invalid" class="error">Please enter username</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <label>Password:</label>
+            </div>
+            <div class="col-lg-4">
+                <input type="text" name="password" placeholder="Enter your Password" required ng-value="password" ng-model="password">
+                <div ng-if="fm.password.$invalid" class="error">Please enter password</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <label for="">Name:</label>
+            </div>
+            <div class="col-lg-4">
+                <input type="text" name="" value="" placeholder="+91" maxlength="2" style="width:30px;">
+                <input type="text" name="phone" placeholder="Enter phonenumber" style="width: 165px" required ng-value="phone" ng-model="phone">
+                <div ng-if="fm.phone.$invalid" class="error">Please enter phone.no</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <label for="">Gender:</label>
+            </div>
+            <div class="col-lg-4">
+                <input type="radio" name="gender" required ng-value="male" ng-model="male">Male
+                <input type="radio" name="gender" required ng-value="female" ng-model="female">female
+
+            </div>
+        </div>
+        <div class="offset-lg-2 col-lg-4">
+            <input type="checkbox" name="checkbox" required ng-value="checkbox" ng-model="checkbox">I agreed to the Terms & Conditions
+            <div ng-if="fm.checkbox.$invalid" class="error">Please agree the conditions&terms</div>
+        </div>
+    </div>
+
+
+
+
+    <!-- <input type="button" ng-disabled="fm.name.$invalid" value="Click Now" ng-click="abc();"> -->
+    <input type="button" value="CreateAccount" class="offset-lg-3 col-lg-2 btn btn-success" ng-click="abc();">
+    </div>
+
+</form>
